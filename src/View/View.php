@@ -1,13 +1,8 @@
 <?php
 
-//ВІДПОВІДАЄ ЗА СТИЛІ(HTML CSS)
-//namespace View;
+namespace View\View;
 
-class Show
+class View
 {
-    public function showCourses()
-    {
-         include_once("FormToUser.html.php");
-
-    }
+    public function include
 }
