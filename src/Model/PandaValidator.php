@@ -5,7 +5,6 @@ class PandaValidator
     protected  $validtext = 'panda';
     protected $grade = '3';
     protected $errors = [];
-    protected $file;
 
     public function checktext() : void
     {
@@ -29,20 +28,6 @@ class PandaValidator
     {
         foreach ($this->errors as $error) {
             echo $error  . '</br>';
-        }
-    }
-
-    public function setFile()
-    {
-        if(isset($_POST['image'])){
-            $this->file = $_POST['image'];
-        }
-    }
-
-    public function checkFile()
-    {
-        if (empty($this->file)) {
-            $this->errors[] = 'You must send a file';
         }
     }
 }

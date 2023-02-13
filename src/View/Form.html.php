@@ -18,10 +18,11 @@
     <input type="password" name="grade" placeholder="write grade">
         </li>
         <li>
+            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
     <input type="file" name="image" >
         </li>
-    <button type="submit"> Send data</button>
     </ul>
+    <button type="submit"> Send data</button>
 </form>
 
 </body>
